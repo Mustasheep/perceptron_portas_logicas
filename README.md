@@ -12,7 +12,7 @@ O algoritmo usa o método de aprendizado supervisionado pelo erro (delta rule). 
 
 O loop continua até que a margem de erro seja 0, indicando que o perceptron aprendeu a função AND perfeitamente (ou atingiu o critério de parada).
 
-**Em resumo:** O código implementa um perceptron simples que aprende a função lógica AND através do ajuste iterativo dos seus pesos baseado no erro.  Ele usa uma função de ativação degrau e um algoritmo de aprendizado supervisionado.
+**Em resumo:** O código implementa um perceptron simples que aprende a função lógica AND através do ajuste iterativo dos seus pesos baseado no erro.  Ele usa uma função de ativação step function e um algoritmo de aprendizado supervisionado.
 
 **Limitações:**
 
