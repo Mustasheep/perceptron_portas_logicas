@@ -1,21 +1,21 @@
-# Perceptron - Tabela AND
+## Algoritmos de aprendizado de máquina para portas lógicas
 
------------------
+Este repositório contém dois códigos Python que implementam diferentes algoritmos de aprendizado de máquina para resolver o problema da porta AND e XOR.
 
-**Algoritmo de Aprendizado**
+--------------------------
+**Código 1: Perceptron Simples**
 
-O algoritmo usa o método de aprendizado supervisionado pelo erro (delta rule).  Para cada entrada:
+O primeiro código implementa um perceptron simples, um modelo de aprendizado de máquina mais básico.
 
-* Calcula a saída do perceptron;
-* Calcula o erro entre a saída desejada e a saída calculada.
-* Atualiza os pesos usando uma regra que ajusta os pesos proporcionalmente ao erro e à entrada correspondente.
-* O loop continua até que a margem de erro seja 0, indicando que o perceptron aprendeu a função AND perfeitamente (ou atingiu
- o critério de parada).
+* **Objetivo:** Treinar um perceptron para aproximar a função AND. Embora não seja ideal para este problema (por sua natureza linear), o código demonstra um algoritmo de aprendizado mais simples.
+* **Metodologia:** Utiliza a função de ativação degrau (step function) e ajusta os pesos iterativamente com base no erro.
+* **Métricas:** O erro total a cada iteração é exibido, mostrando o processo de treinamento até que o erro seja zerado (ou um critério de parada seja atingido).
 
-**Em resumo:** O código implementa um perceptron simples que aprende a função lógica AND através do ajuste iterativo dos seus pesos baseado no erro.  Ele usa uma função de ativação step function e um algoritmo de aprendizado supervisionado.
+---------------------------
+**Código 2: Rede Neural com Backpropagation**
 
-**Limitações:**
+O segundoo código implementa uma rede neural de duas camadas (uma camada de entrada, uma camada oculta e uma camada de saída) usando o algoritmo de backpropagation para ajustar os pesos sinápticos.
 
-* **Função de ativação:** A função degrau é uma escolha simples, mas limita a capacidade do perceptron.
-* **Convergência:**  Nem todos os problemas são linearmente separáveis e, portanto, este perceptron pode não convergir para uma solução perfeita para problemas mais complexos.
-* **Apenas AND:** Este código está especificamente configurado para aprender a função AND. Para funções lógicas diferentes (OR, XOR), as saídas serão alteradas, e para funções mais complexas, seria necessário um perceptron multicamadas (rede neural).
+* **Objetivo:** Treinar uma rede neural para aproximar a função XOR. O algoritmo ajusta iterativamente os pesos da rede com base no erro entre a saída prevista e a saída desejada.
+* **Metodologia:** Utiliza a função sigmoide como função de ativação e o gradiente descendente para minimizar o erro. O momentum é incorporado para acelerar a convergência.
+* **Métricas:**  A margem de erro (média do erro absoluto) é impressa a cada iteração, mostrando a convergência do modelo.
