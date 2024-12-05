@@ -14,7 +14,7 @@ O primeiro código implementa um perceptron simples, um modelo de aprendizado de
 ---------------------------
 **Código 2: Rede Neural com Backpropagation**
 
-O segundoo código implementa uma rede neural de duas camadas (uma camada de entrada, uma camada oculta e uma camada de saída) usando o algoritmo de backpropagation para ajustar os pesos sinápticos.
+O segundo código implementa uma rede neural de duas camadas (uma camada de entrada, uma camada oculta e uma camada de saída) usando o algoritmo de backpropagation para ajustar os pesos sinápticos.
 
 * **Objetivo:** Treinar uma rede neural para aproximar a função XOR. O algoritmo ajusta iterativamente os pesos da rede com base no erro entre a saída prevista e a saída desejada.
 * **Metodologia:** Utiliza a função sigmoide como função de ativação e o gradiente descendente para minimizar o erro. O momentum é incorporado para acelerar a convergência.
